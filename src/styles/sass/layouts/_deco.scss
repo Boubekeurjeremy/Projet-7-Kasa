@@ -1,0 +1,43 @@
+.kasa__home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0 100px 0;
+
+    &__image {
+        width: 100%;
+        border-radius: 25px;
+        background: #000000;
+        mix-blend-mode: darken;
+        opacity: 0.9;
+        border: 2px solid rgb(243, 241, 241);
+    }
+
+    &__text {
+        position: absolute;
+
+        font-weight: 500;
+        font-size: 48px;
+        color: $color-secondary;
+        @include font-family;
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .kasa__home {
+        padding: 10px 0 10px 0;
+
+        &__image {
+            width: 100%;
+            height: 100px;
+        }
+        &__text {
+            font-size: 24px;
+        }
+    }
+}

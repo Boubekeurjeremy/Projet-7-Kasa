@@ -1,0 +1,57 @@
+.kasa__card {
+    @include max-width-auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 100px 0;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    padding: 60px 0 110px 0;
+
+    &__bloc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 80%;
+        height: 123%;
+        border-radius: 10px;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+    }
+    &__cover {
+        width: 100%;
+        height: 80%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    &__title {
+        @include font-family;
+        font-size: 18px;
+        color: $color-secondary;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .kasa__card {
+        display: flex;
+        flex-direction: column;
+        background-color: inherit;
+        width: 100%;
+        gap: 20px 0;
+        padding-top: 10px;
+
+        &__bloc {
+            width: 100%;
+            height: 250px;
+        }
+        &__cover {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

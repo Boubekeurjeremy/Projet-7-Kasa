@@ -1,0 +1,126 @@
+.kasa__banner {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.kasa__banner__logo {
+  margin: 2% auto 0 4%;
+}
+.kasa__banner__page {
+  margin-top: 2.5%;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  color: #ff6060;
+  padding-right: 60px;
+  text-decoration: none;
+}
+.kasa__banner__page:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .kasa__banner__logo {
+    width: 125px;
+    height: 37px;
+  }
+  .kasa__banner__page {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+}
+.kasa__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+.kasa__home__image {
+  width: 100%;
+  border-radius: 25px;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.9;
+  border: 2px solid rgb(243, 241, 241);
+}
+.kasa__home__text {
+  position: absolute;
+  font-weight: 500;
+  font-size: 48px;
+  color: #ffffff;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  margin: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .kasa__home {
+    padding: 10px 0 10px 0;
+  }
+  .kasa__home__image {
+    width: 100%;
+    height: 100px;
+  }
+  .kasa__home__text {
+    font-size: 24px;
+  }
+}
+.kasa__card {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 100px 0;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 60px 0 110px 0;
+}
+.kasa__card__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 123%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.kasa__card__cover {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0 0;
+}
+.kasa__card__title {
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .kasa__card {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    width: 100%;
+    gap: 20px 0;
+    padding-top: 10px;
+  }
+  .kasa__card__bloc {
+    width: 100%;
+    height: 250px;
+  }
+  .kasa__card__cover {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
