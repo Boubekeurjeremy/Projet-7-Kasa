@@ -1,0 +1,43 @@
+.kasa__footer {
+    margin: -10px;
+    background: #000000;
+
+    &__bloc {
+        margin-top: 40px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo {
+        margin: 55px 0 20px 0;
+    }
+    &__info {
+        @include font-family;
+        font-weight: 500;
+        font-size: 24px;
+        color: $color-secondary;
+    }
+    &__copyright {
+        width: 17px;
+        margin-right: 5px;
+    }
+}
+@media (max-width: $breakpoint-mobile) {
+    .kasa__footer {
+        &__bloc {
+          margin-top: 0;
+            padding-bottom:40px ;
+        }
+        &__logo {
+            margin: 45px 0 5px 0;
+        }
+        &__info {
+            font-size: 12px;
+        }
+        &__copyright {
+            width: 10px;
+        }
+    }
+}

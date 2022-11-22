@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import IMG from "../../assets/IMG.png";
 import "../../styles/style.css";
 import PropTypes from "prop-types";
@@ -17,14 +18,14 @@ function Home({ id, cover, title }) {
             </div>
             <div className="kasa__card">
                 {housingList.map(({ id, cover, title }) => (
-                    <div className="kasa__card__bloc" key={id - title}>
+                    <Link to="/rental/:id" className="kasa__card__bloc" key={id - title}>
                         <img
                             className="kasa__card__cover"
                             src={cover}
                             alt="Logement"
                         />
                         <h2 className="kasa__card__title">{title} </h2>
-                    </div>
+                    </Link>
                 ))}{" "}
             </div>{" "}
         </div>
