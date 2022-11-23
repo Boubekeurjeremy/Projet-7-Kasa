@@ -6,3 +6,7 @@
 @mixin font-family {
     font-family: "Montserrat", "Trebuchet MS", sans-serif;  
 }
+
+@mixin object-cover{
+    object-fit: cover;
+}

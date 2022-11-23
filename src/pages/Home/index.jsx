@@ -3,10 +3,11 @@ import IMG from "../../assets/IMG.png";
 import "../../styles/style.css";
 import PropTypes from "prop-types";
 import { housingList } from "../../datas/housingList";
-function Home({ id, cover, title }) {
+
+function Home({ id, cover, title}) {
     return (
-        <div>
-            <div className="kasa__home">
+       <div>
+          <div className="kasa__home">
                 <img
                     src={IMG}
                     alt="Paysage d'une forêt"
@@ -15,20 +16,20 @@ function Home({ id, cover, title }) {
                 <h1 className="kasa__home__text">
                     Chez vous, partout et ailleurs
                 </h1>
-            </div>
+                </div>
             <div className="kasa__card">
                 {housingList.map(({ id, cover, title }) => (
-                    <Link to="/rental/:id" className="kasa__card__bloc" key={id - title}>
+                    <Link to="/rental/:id" className="kasa__card__bloc" key={id}>
                         <img
                             className="kasa__card__cover"
                             src={cover}
                             alt="Logement"
                         />
-                        <h2 className="kasa__card__title">{title} </h2>
+                        <h1 className="kasa__card__title">{title}</h1>
                     </Link>
                 ))}{" "}
             </div>{" "}
-        </div>
+            </div>
     );
 }
 
@@ -36,4 +37,8 @@ Home.propTypes = {
     cover: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
 };
+Home.defaultProps = {
+    cover:"cover",
+    title:"title"
+}
 export default Home;

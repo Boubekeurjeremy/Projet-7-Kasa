@@ -54,7 +54,7 @@
         }
         &__cover {
             width: 100%;
-            object-fit: cover;
+            @include object-cover;
         }
     }
 }

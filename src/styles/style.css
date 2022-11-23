@@ -52,6 +52,7 @@
 }
 .kasa__home__text {
   position: absolute;
+  font-style: normal;
   font-weight: 500;
   font-size: 48px;
   color: #ffffff;
@@ -66,6 +67,7 @@
   .kasa__home__image {
     width: 100%;
     height: 100px;
+    object-fit: cover;
   }
   .kasa__home__text {
     font-size: 24px;
@@ -121,6 +123,100 @@
   }
   .kasa__card__cover {
     width: 100%;
+    object-fit: cover;
+  }
+}
+.kasa__dropdown {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  border-radius: 5px;
+}
+.kasa__dropdown__header {
+  align-items: center;
+  background-color: #ff6060;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 25%;
+  min-height: 50px;
+  width: 100%;
+}
+.kasa__dropdown__titre {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin: 5px 20px;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+}
+.kasa__dropdown__fleche {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  width: 100%;
+}
+.kasa__dropdown__fleche:hover {
+  cursor: pointer;
+}
+.kasa__dropdown__fleche.true {
+  justify-content: start;
+  transform: rotate(-180deg);
+}
+.kasa__dropdown__description {
+  display: flex;
+  align-items: flex-end;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  color: #ff6060;
+  height: 75%;
+  min-height: 100px;
+  margin-top: -10px;
+  padding: 25px 10px 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .kasa__dropdown {
+    margin-bottom: -10px;
+  }
+  .kasa__dropdown__header {
+    min-height: 12px;
+  }
+  .kasa__dropdown__titre {
+    font-size: 13px;
+  }
+  .kasa__dropdown__fleche {
+    height: 10px;
+  }
+  .kasa__dropdown__description {
+    font-size: 12px;
+    align-items: flex-start;
+  }
+}
+.kasa__about {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kasa__about__image {
+  width: 100%;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 25px;
+  margin: 30px 0 40px 0;
+}
+
+@media (max-width: 768px) {
+  .kasa__about__image {
+    height: 200px;
     object-fit: cover;
   }
 }
