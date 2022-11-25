@@ -1,0 +1,47 @@
+.kasa__error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include font-family;
+    color: $color-primary;
+    &__number {
+        margin: 200px 0 40px 0;
+    }
+    &__text {
+        line-height: 25px;
+        font-size: 36px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    &__link {
+        margin: 100px 0;
+        @include font-family;
+        color: $color-primary;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        &:hover {
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+    }
+}
+@media (max-width: $breakpoint-mobile) {
+    .kasa__error {
+        &__number {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
+.test {
+    display: flex;
+    flex-direction: row;
+}

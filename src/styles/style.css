@@ -32,6 +32,47 @@
     padding-right: 10px;
   }
 }
+.kasa__footer {
+  margin: -10px;
+  background: #000000;
+}
+.kasa__footer__bloc {
+  margin-top: 40px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.kasa__footer__logo {
+  margin: 55px 0 20px 0;
+}
+.kasa__footer__info {
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+.kasa__footer__copyright {
+  width: 17px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .kasa__footer__bloc {
+    margin-top: 0;
+    padding-bottom: 40px;
+  }
+  .kasa__footer__logo {
+    margin: 45px 0 5px 0;
+  }
+  .kasa__footer__info {
+    font-size: 12px;
+  }
+  .kasa__footer__copyright {
+    width: 10px;
+  }
+}
 .kasa__home {
   display: flex;
   justify-content: center;
@@ -66,13 +107,83 @@
   }
   .kasa__home__image {
     width: 100%;
-    height: 100px;
+    height: 130px;
     object-fit: cover;
   }
   .kasa__home__text {
     font-size: 24px;
   }
 }
+.kasa__about {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kasa__about__image {
+  width: 100%;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 25px;
+  margin: 30px 0 40px 0;
+}
+
+@media (max-width: 768px) {
+  .kasa__about__image {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+.kasa__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  color: #ff6060;
+}
+.kasa__error__number {
+  margin: 200px 0 40px 0;
+}
+.kasa__error__text {
+  line-height: 25px;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+}
+.kasa__error__link {
+  margin: 100px 0;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.kasa__error__link:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .kasa__error__number {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  .kasa__error__text {
+    font-size: 18px;
+  }
+  .kasa__error__link {
+    font-size: 14px;
+  }
+}
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
 .kasa__card {
   max-width: 1500px;
   margin: 0 auto;
@@ -89,16 +200,15 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 85%;
-  height: 360px;
+  width: 80%;
+  height: 340px;
   border-radius: 10px;
   cursor: pointer;
-  text-decoration: none;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 .kasa__card__cover {
   width: 100%;
-  height: 80%;
+  height: 110%;
   border-radius: 10px 10px 0 0;
 }
 .kasa__card__title {
@@ -106,23 +216,29 @@
   font-size: 18px;
   color: #ffffff;
   padding-left: 15px;
+  text-decoration: none;
 }
 
+@media (max-width: 990px) {
+  .kasa__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 768px) {
   .kasa__card {
     display: flex;
     flex-direction: column;
     background-color: inherit;
-    width: 100%;
     gap: 20px 0;
     padding-top: 10px;
   }
   .kasa__card__bloc {
     width: 100%;
-    height: 250px;
   }
   .kasa__card__cover {
     width: 100%;
+    height: 300px;
     object-fit: cover;
   }
 }
@@ -141,7 +257,7 @@
   min-height: 50px;
   width: 100%;
 }
-.kasa__dropdown__titre {
+.kasa__dropdown__title {
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -186,7 +302,7 @@
   .kasa__dropdown__header {
     min-height: 12px;
   }
-  .kasa__dropdown__titre {
+  .kasa__dropdown__title {
     font-size: 13px;
   }
   .kasa__dropdown__fleche {
@@ -195,70 +311,6 @@
   .kasa__dropdown__description {
     font-size: 12px;
     align-items: flex-start;
-  }
-}
-.kasa__about {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.kasa__about__image {
-  width: 100%;
-  background: #000000;
-  mix-blend-mode: darken;
-  opacity: 0.3;
-  border-radius: 25px;
-  margin: 30px 0 40px 0;
-}
-
-@media (max-width: 768px) {
-  .kasa__about__image {
-    height: 200px;
-    object-fit: cover;
-  }
-}
-.kasa__footer {
-  margin: -10px;
-  background: #000000;
-}
-.kasa__footer__bloc {
-  margin-top: 40px;
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.kasa__footer__logo {
-  margin: 55px 0 20px 0;
-}
-.kasa__footer__info {
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  color: #ffffff;
-}
-.kasa__footer__copyright {
-  width: 17px;
-  margin-right: 5px;
-}
-
-@media (max-width: 768px) {
-  .kasa__footer__bloc {
-    margin-top: 0;
-    padding-bottom: 40px;
-  }
-  .kasa__footer__logo {
-    margin: 45px 0 5px 0;
-  }
-  .kasa__footer__info {
-    font-size: 12px;
-  }
-  .kasa__footer__copyright {
-    width: 10px;
   }
 }
 

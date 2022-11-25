@@ -1,5 +1,3 @@
-
-
 .kasa__about{
    @include max-width-auto;
     display: flex;
@@ -19,7 +17,7 @@
     .kasa__about{
         &__image{
             height: 200px;
-            @include object-cover;
+            object-fit: cover;
         }
     }
 }
