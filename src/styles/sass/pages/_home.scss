@@ -1,4 +1,5 @@
 .kasa__home {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +7,7 @@
     width: 100%;
     @include max-width-auto;
     padding: 50px 0 100px 0;
+    opacity: 1 !important;
 
     &__image {
         width: 100%;

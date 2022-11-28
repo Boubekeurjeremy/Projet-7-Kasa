@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import fleche from "../../assets/fleche.png";
 import PropTypes from "prop-types";
-function DropDown({ title, description }) {
+import "../../styles/style.css";
+
+function Collapse({ title, description }) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -22,12 +24,12 @@ function DropDown({ title, description }) {
     );
 }
 
-DropDown.propTypes = {
+Collapse.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
 };
-DropDown.defaultProps = {
+Collapse.defaultProps = {
     title: "",
     description: "",
 };
-export default DropDown;
+export default Collapse;

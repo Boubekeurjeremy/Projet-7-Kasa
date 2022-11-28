@@ -73,117 +73,6 @@
     width: 10px;
   }
 }
-.kasa__home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 50px 0 100px 0;
-}
-.kasa__home__image {
-  width: 100%;
-  border-radius: 25px;
-  background: #000000;
-  mix-blend-mode: darken;
-  opacity: 0.9;
-  border: 2px solid rgb(243, 241, 241);
-}
-.kasa__home__text {
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  color: #ffffff;
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
-  margin: 0 40px;
-}
-
-@media (max-width: 768px) {
-  .kasa__home {
-    padding: 10px 0 10px 0;
-  }
-  .kasa__home__image {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-  }
-  .kasa__home__text {
-    font-size: 24px;
-  }
-}
-.kasa__about {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.kasa__about__image {
-  width: 100%;
-  background: #000000;
-  mix-blend-mode: darken;
-  opacity: 0.3;
-  border-radius: 25px;
-  margin: 30px 0 40px 0;
-}
-
-@media (max-width: 768px) {
-  .kasa__about__image {
-    height: 200px;
-    object-fit: cover;
-  }
-}
-.kasa__error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
-  color: #ff6060;
-}
-.kasa__error__number {
-  margin: 200px 0 40px 0;
-}
-.kasa__error__text {
-  line-height: 25px;
-  font-size: 36px;
-  font-weight: 500;
-  font-style: normal;
-}
-.kasa__error__link {
-  margin: 100px 0;
-  font-family: "Montserrat", "Trebuchet MS", sans-serif;
-  color: #ff6060;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-}
-.kasa__error__link:hover {
-  text-decoration-line: underline;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .kasa__error__number {
-    width: 150px;
-    margin-bottom: 10px;
-  }
-  .kasa__error__text {
-    font-size: 18px;
-  }
-  .kasa__error__link {
-    font-size: 14px;
-  }
-}
-.test {
-  display: flex;
-  flex-direction: row;
-}
-
 .kasa__card {
   max-width: 1500px;
   margin: 0 auto;
@@ -195,13 +84,16 @@
   border-radius: 25px;
   padding: 60px 0;
 }
+.kasa__card__link {
+  text-decoration: none;
+}
 .kasa__card__bloc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 80%;
-  height: 340px;
+  width: 85%;
+  height: 360px;
   border-radius: 10px;
   cursor: pointer;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -216,7 +108,6 @@
   font-size: 18px;
   color: #ffffff;
   padding-left: 15px;
-  text-decoration: none;
 }
 
 @media (max-width: 990px) {
@@ -312,6 +203,175 @@
     font-size: 12px;
     align-items: flex-start;
   }
+}
+.kasa__defilement {
+  display: block;
+  height: 415px;
+  position: relative;
+  width: 100%;
+}
+.kasa__defilement__fleche {
+  position: absolute;
+  width: 45px;
+  color: #ffffff;
+}
+.kasa__defilement__fleche:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px rgb(68, 67, 67));
+}
+.kasa__defilement__fleche__left {
+  margin-left: 15px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+.kasa__defilement__fleche__right {
+  margin-right: 15px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(265deg);
+}
+.kasa__defilement__img {
+  margin-top: 20px;
+  border-radius: 25px;
+  height: 415px;
+  object-fit: cover;
+  display: none;
+  width: 100%;
+}
+.kasa__defilement__img.actif {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .kasa__defilement__fleche {
+    width: 25px;
+  }
+  .kasa__defilement__fleche__left {
+    top: 30%;
+  }
+  .kasa__defilement__fleche__right {
+    top: 30%;
+  }
+  .kasa__defilement__img {
+    height: 255px;
+  }
+}
+.kasa__home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+  opacity: 1 !important;
+}
+.kasa__home__image {
+  width: 100%;
+  border-radius: 25px;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.9;
+  border: 2px solid rgb(243, 241, 241);
+}
+.kasa__home__text {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  color: #ffffff;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  margin: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .kasa__home {
+    padding: 10px 0 10px 0;
+  }
+  .kasa__home__image {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+  .kasa__home__text {
+    font-size: 24px;
+  }
+}
+.kasa__about {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.kasa__about__image {
+  width: 100%;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
+  border-radius: 25px;
+  margin: 30px 0 40px 0;
+}
+
+@media (max-width: 768px) {
+  .kasa__about__image {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+.kasa__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  color: #ff6060;
+}
+.kasa__error__number {
+  margin: 200px 0 40px 0;
+}
+.kasa__error__text {
+  text-align: center;
+  line-height: 25px;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+}
+.kasa__error__link {
+  margin: 100px 0;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.kasa__error__link:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .kasa__error__number {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  .kasa__error__text {
+    font-size: 18px;
+  }
+  .kasa__error__link {
+    font-size: 14px;
+  }
+}
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+.kasa__housing {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
