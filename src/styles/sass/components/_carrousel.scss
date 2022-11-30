@@ -42,6 +42,7 @@
 
 @media (max-width: $breakpoint-mobile) {
     .kasa__defilement {
+        height: 255px;
         &__fleche {
             width: 25px;
         }

@@ -1,0 +1,21 @@
+.kasa__tag {
+    @include font-family;
+    background-color: $color-primary;
+    border-radius: 10px;
+    color: $color-secondary;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+    min-width: 115px;
+    padding: 5px 15px;   
+    text-align: center; 
+}
+@media(max-width: $breakpoint-mobile){
+    .kasa__tag{
+        min-width: 84px;
+        border-radius: 5px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}

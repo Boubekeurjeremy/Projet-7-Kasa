@@ -243,6 +243,9 @@
 }
 
 @media (max-width: 768px) {
+  .kasa__defilement {
+    height: 255px;
+  }
   .kasa__defilement__fleche {
     width: 25px;
   }
@@ -254,6 +257,28 @@
   }
   .kasa__defilement__img {
     height: 255px;
+  }
+}
+.kasa__tag {
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+  background-color: #ff6060;
+  border-radius: 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px 0 0;
+  min-width: 115px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .kasa__tag {
+    min-width: 84px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-bottom: 10px;
   }
 }
 .kasa__home {
@@ -372,6 +397,94 @@
 .kasa__housing {
   max-width: 1500px;
   margin: 0 auto;
+  color: #ff6060;
+  font-family: "Montserrat", "Trebuchet MS", sans-serif;
+}
+.kasa__housing__bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.kasa__housing__news {
+  margin: 0 auto 0 0;
+}
+.kasa__housing__title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 20px 0 -5px 0;
+}
+.kasa__housing__location {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.kasa__housing__little__bloc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.kasa__housing__name {
+  padding-right: 15px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100px;
+}
+.kasa__housing__image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.kasa__housing__note {
+  padding-top: 15px;
+  padding-left: 30px;
+  width: 200px;
+}
+
+.kasa__star {
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .kasa__housing__bloc {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .kasa__housing__title {
+    font-size: 18px;
+  }
+  .kasa__housing__location {
+    font-size: 14px;
+  }
+  .kasa__housing__info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+  }
+  .kasa__housing__name {
+    font-size: 12px;
+    width: 50px;
+  }
+  .kasa__housing__image {
+    width: 32px;
+    height: 32px;
+  }
+  .kasa__housing__note {
+    padding-top: 0;
+    padding-left: 0;
+    margin: 0 auto 0 0;
+  }
+  .kasa__star {
+    width: 15px;
+    height: 15px;
+    padding-left: 0;
+    padding-right: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

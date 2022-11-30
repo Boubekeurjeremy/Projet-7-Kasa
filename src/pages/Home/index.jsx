@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import IMG from "../../assets/IMG.png";
-import Card from "../../components/Card";
+import Card from "../../components/Cards";
 import "../../styles/style.css";
 import { housingList } from "../../datas/housingList";
 function Home() {
