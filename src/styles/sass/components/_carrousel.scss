@@ -7,7 +7,6 @@
     &__fleche {
         position: absolute;
         width: 45px;
-
         color: $color-secondary;
     }
     &__fleche:hover {
@@ -46,12 +45,7 @@
         &__fleche {
             width: 25px;
         }
-        &__fleche__left {
-            top: 30%;
-        }
-        &__fleche__right {
-            top: 30%;
-        }
+
         &__img {
             height: 255px;
         }

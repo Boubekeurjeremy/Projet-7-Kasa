@@ -11,83 +11,91 @@
     &__news {
         margin: 0 auto 0 0;
     }
-    &__title{
+    &__title {
         font-size: 36px;
-        font-weight: 500;
+        @include font-weight;
         margin: 20px 0 -5px 0;
     }
-    &__location{
-       font-size: 18px;
-       font-weight: 500;
-       margin-bottom: 20px; 
+    &__location {
+        font-size: 18px;
+        @include font-weight;
+        margin-bottom: 20px;
     }
     &__little__bloc {
         display: flex;
         flex-direction: row;
-       
-       align-items: center;
-       justify-content: flex-end;
+        align-items: center;
+        justify-content: flex-end;
     }
-    &__name{
-       padding-right: 15px;
-     text-align: right;
+    &__name {
+        padding-right: 15px;
+        text-align: right;
         font-size: 18px;
-        font-weight: 500;
-        width: 100px;
+        @include font-weight;
+        width: 80px;
     }
-    &__image{
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
+    &__image {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
     }
-   &__note{
-    padding-top: 15px;
-    padding-left: 30px;
-    width: 200px;
-   }
+    &__note {
+        padding-top: 15px;
+        padding-left: 30px;
+        width: 200px;
+    }
+    &__collapse {
+        display: inline-flex;
+        width: 100%;
+        margin: 20px 0;
+        gap: 0 75px;
+        list-style: none;
+    }
 }
-.kasa__star{
+.kasa__star {
     width: 30px;
     height: 30px;
-    padding-left: 10px; 
+    padding-left: 10px;
 }
-@media(max-width: $breakpoint-mobile){
-    .kasa__housing{
-        &__bloc{
+@media (max-width: $breakpoint-mobile) {
+    .kasa__housing {
+        &__bloc {
             margin-bottom: 20px;
             flex-direction: column;
         }
-       &__title{
-        font-size: 18px;
-       } 
-       &__location{
-        font-size: 14px;
-       }
-       &__info{
-       display: flex;
-       flex-direction: row-reverse;
-      align-items: center;
-      width: 100%;
-       }
-       &__name{
-        font-size: 12px;
-        width: 50px;
-       
-       }
-       &__image{
-        width: 32px;
-        height: 32px;
-       }
-       &__note{
-        padding-top : 0;
-        padding-left: 0;
-        margin: 0 auto 0 0;
-       }
+        &__title {
+            font-size: 18px;
+        }
+        &__location {
+            font-size: 14px;
+        }
+        &__info {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            width: 100%;
+        }
+        &__name {
+            font-size: 12px;
+            width: 50px;
+        }
+        &__image {
+            width: 32px;
+            height: 32px;
+        }
+        &__note {
+            padding-top: 0;
+            padding-left: 0;
+            margin: 0 auto 0 0;
+        }
+        &__collapse {
+            flex-direction: column;
+        }
     }
-    .kasa__star{
+    .kasa__star {
         width: 15px;
         height: 15px;
-       padding-left: 0;
-       padding-right: 5px;
+        padding-left: 0;
+        padding-right: 5px;
     }
 }

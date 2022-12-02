@@ -1,7 +1,7 @@
 import React from "react";
 import bannerAbout from "../../assets/banner-about.png";
 import Collapse from "../../Hooks/Collapse";
-import "../../styles/style.css";
+import "../../styles/css/prefixed/style.css";
 
 function About() {
     return (

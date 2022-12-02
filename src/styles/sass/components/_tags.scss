@@ -5,14 +5,14 @@
     color: $color-secondary;
     display: inline-block;
     font-size: 14px;
-    font-weight: 500;
+    @include font-weight;
     margin: 0 10px 0 0;
     min-width: 115px;
-    padding: 5px 15px;   
-    text-align: center; 
+    padding: 5px 15px;
+    text-align: center;
 }
-@media(max-width: $breakpoint-mobile){
-    .kasa__tag{
+@media (max-width: $breakpoint-mobile) {
+    .kasa__tag {
         min-width: 84px;
         border-radius: 5px;
         font-size: 10px;

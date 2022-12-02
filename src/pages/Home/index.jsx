@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import IMG from "../../assets/IMG.png";
 import Card from "../../components/Cards";
-import "../../styles/style.css";
+import "../../styles/css/prefixed/style.css";
 import { housingList } from "../../datas/housingList";
+
 function Home() {
     return (
         <div>
@@ -18,11 +19,18 @@ function Home() {
             </div>
             <div className="kasa__card">
                 {housingList.map(({ id, cover, title }) => (
-                    <Link key={id} to={"/housing/" + id+"/#" } className="kasa__card__link">
-                    <Card key={`${cover}-${id}`} cover={cover} title={title} />
+                    <Link
+                        key={id}
+                        to={"/housing/" + id + "/#"}
+                        className="kasa__card__link"
+                    >
+                        <Card
+                            key={`${cover}-${id}`}
+                            cover={cover}
+                            title={title}
+                        />
                     </Link>
                 ))}{" "}
-                
             </div>
         </div>
     );

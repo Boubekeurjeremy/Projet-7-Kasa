@@ -11,7 +11,7 @@
     &__page {
         margin-top: 2.5%;
         font-size: 24px;
-        font-weight: 500;
+        @include font-weight;
         @include font-family;
         color: $color-primary;
         padding-right: 60px;
@@ -25,13 +25,15 @@
 }
 
 @media (max-width: $breakpoint-mobile) {
-    .kasa__banner__logo {
-        width: 125px;
-        height: 37px;
-    }
+    .kasa__banner {
+        &__logo {
+            width: 125px;
+            height: 37px;
+        }
 
-    .kasa__banner__page {
-        font-size: 12px;
-        padding-right: 10px;
+        &__page {
+            font-size: 12px;
+            padding-right: 10px;
+        }
     }
 }

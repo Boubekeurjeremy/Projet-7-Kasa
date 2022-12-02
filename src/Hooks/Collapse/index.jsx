@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import fleche from "../../assets/fleche.png";
 import PropTypes from "prop-types";
-import "../../styles/style.css";
+import "../../styles/css/prefixed/style.css";
 
 function Collapse({ title, description }) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="kasa__dropdown" id={`dropdown-${title}`}>
-            <div className="kasa__dropdown__header">
-                <div className="kasa__dropdown__title">{title}</div>
+        <div className="kasa__collapse">
+            <div className="kasa__collapse__header">
+                <div className="kasa__collapse__title">{title}</div>
                 <span
-                    className={`kasa__dropdown__fleche ${open}`}
+                    className={`kasa__collapse__fleche ${open}`}
                     onClick={() => setOpen(!open)}
                 >
                     <img src={fleche} alt="Ouvrir cette liste" />
                 </span>
             </div>
             {open && (
-                <div className="kasa__dropdown__description">{description}</div>
+                <div className="kasa__collapse__description">{description}</div>
             )}
         </div>
     );
@@ -26,7 +26,10 @@ function Collapse({ title, description }) {
 
 Collapse.propTypes = {
     title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.oneOfType([
+        PropTypes.string.isRequired,
+        PropTypes.array.isRequired,
+    ]),
 };
 Collapse.defaultProps = {
     title: "",

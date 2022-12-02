@@ -133,13 +133,14 @@
     object-fit: cover;
   }
 }
-.kasa__dropdown {
+.kasa__collapse {
   max-width: 1150px;
   margin: 0 auto;
   padding-bottom: 35px;
   border-radius: 5px;
+  width: 100%;
 }
-.kasa__dropdown__header {
+.kasa__collapse__header {
   align-items: center;
   background-color: #ff6060;
   border-radius: 5px;
@@ -148,7 +149,7 @@
   min-height: 50px;
   width: 100%;
 }
-.kasa__dropdown__title {
+.kasa__collapse__title {
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -158,22 +159,23 @@
   margin: 5px 20px;
   font-family: "Montserrat", "Trebuchet MS", sans-serif;
 }
-.kasa__dropdown__fleche {
+.kasa__collapse__fleche {
   display: flex;
   justify-content: flex-end;
   margin-right: 30px;
   width: 100%;
 }
-.kasa__dropdown__fleche:hover {
+.kasa__collapse__fleche:hover {
   cursor: pointer;
 }
-.kasa__dropdown__fleche.true {
+.kasa__collapse__fleche.true {
   justify-content: start;
   transform: rotate(-180deg);
 }
-.kasa__dropdown__description {
+.kasa__collapse__description {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
   font-size: 24px;
   font-weight: 400;
   font-family: "Montserrat", "Trebuchet MS", sans-serif;
@@ -184,24 +186,26 @@
   min-height: 100px;
   margin-top: -10px;
   padding: 25px 10px 10px 20px;
+  line-height: 32.5px;
 }
 
 @media (max-width: 768px) {
-  .kasa__dropdown {
+  .kasa__collapse {
     margin-bottom: -10px;
   }
-  .kasa__dropdown__header {
+  .kasa__collapse__header {
     min-height: 12px;
   }
-  .kasa__dropdown__title {
+  .kasa__collapse__title {
     font-size: 13px;
   }
-  .kasa__dropdown__fleche {
+  .kasa__collapse__fleche {
     height: 10px;
   }
-  .kasa__dropdown__description {
+  .kasa__collapse__description {
     font-size: 12px;
     align-items: flex-start;
+    line-height: 20px;
   }
 }
 .kasa__defilement {
@@ -248,12 +252,6 @@
   }
   .kasa__defilement__fleche {
     width: 25px;
-  }
-  .kasa__defilement__fleche__left {
-    top: 30%;
-  }
-  .kasa__defilement__fleche__right {
-    top: 30%;
   }
   .kasa__defilement__img {
     height: 255px;
@@ -430,7 +428,7 @@
   text-align: right;
   font-size: 18px;
   font-weight: 500;
-  width: 100px;
+  width: 80px;
 }
 .kasa__housing__image {
   width: 64px;
@@ -441,6 +439,13 @@
   padding-top: 15px;
   padding-left: 30px;
   width: 200px;
+}
+.kasa__housing__collapse {
+  display: inline-flex;
+  width: 100%;
+  margin: 20px 0;
+  gap: 0 75px;
+  list-style: none;
 }
 
 .kasa__star {
@@ -478,6 +483,9 @@
     padding-top: 0;
     padding-left: 0;
     margin: 0 auto 0 0;
+  }
+  .kasa__housing__collapse {
+    flex-direction: column;
   }
   .kasa__star {
     width: 15px;

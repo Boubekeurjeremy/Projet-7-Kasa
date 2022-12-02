@@ -15,7 +15,7 @@
     }
     &__info {
         @include font-family;
-        font-weight: 500;
+        @include font-weight;
         font-size: 24px;
         color: $color-secondary;
     }
@@ -27,8 +27,8 @@
 @media (max-width: $breakpoint-mobile) {
     .kasa__footer {
         &__bloc {
-          margin-top: 0;
-            padding-bottom:40px ;
+            margin-top: 0;
+            padding-bottom: 40px;
         }
         &__logo {
             margin: 45px 0 5px 0;

@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import "../../styles/style.css";
+import "../../styles/css/prefixed/style.css";
 
-function Card({ id, cover, title }) {
+function Card({ cover, title }) {
     return (
         <div >
-            <div className="kasa__card__bloc" id={`card-${cover}`}>
+            <div className="kasa__card__bloc" >
                 <img className="kasa__card__cover" src={cover} alt="Logement" />
                 <h1 className="kasa__card__title">{title}</h1>
             </div>

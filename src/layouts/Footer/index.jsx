@@ -1,4 +1,4 @@
-import "../../styles/style.css";
+import "../../styles/css/prefixed/style.css";
 import LOGO from "../../assets/LOGO-FOOTER.png";
 import copyright from "../../assets/copyright.png";
 function Footer() {

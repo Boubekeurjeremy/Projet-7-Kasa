@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/style.css";
+import "../../styles/css/prefixed/style.css";
 import PropTypes from "prop-types";
 
 function Tag({name}) {

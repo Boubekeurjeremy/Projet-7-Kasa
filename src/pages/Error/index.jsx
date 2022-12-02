@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ERROR from "../../assets/404.png";
+import "../../styles/css/prefixed/style.css";
 function Error() {
     return (
         <div className="kasa__error">
