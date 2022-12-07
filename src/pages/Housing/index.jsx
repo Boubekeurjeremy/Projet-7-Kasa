@@ -2,12 +2,12 @@ import React from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { housingList } from "../../datas/housingList";
 import "../../styles/css/prefixed/style.css";
-import Carrousel from "../../Hooks/Carrousel";
+import Carrousel from "../../components/Carrousel";
 import Tag from "../../components/Tags";
 import STAR from "../../assets/STAR.png";
 import EmptyStar from "../../assets/EmptyStar.png";
 import PropTypes from "prop-types";
-import Collapse from "../../Hooks/Collapse";
+import Collapse from "../../components/Collapse";
 
 function Housing() {
     

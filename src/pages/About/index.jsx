@@ -1,6 +1,6 @@
 import React from "react";
 import bannerAbout from "../../assets/banner-about.png";
-import Collapse from "../../Hooks/Collapse";
+import Collapse from "../../components/Collapse";
 import "../../styles/css/prefixed/style.css";
 
 function About() {

@@ -1,38 +1,6 @@
-import React, { useState } from "react";
-import fleche from "../../assets/fleche.png";
-import PropTypes from "prop-types";
-import "../../styles/css/prefixed/style.css";
+import { useState } from "react";
 
-function Collapse({ title, description }) {
+export function useCollapse() {
     const [open, setOpen] = useState(false);
-
-    return (
-        <div className="kasa__collapse">
-            <div className="kasa__collapse__header">
-                <div className="kasa__collapse__title">{title}</div>
-                <span
-                    className={`kasa__collapse__fleche ${open}`}
-                    onClick={() => setOpen(!open)}
-                >
-                    <img src={fleche} alt="Ouvrir cette liste" />
-                </span>
-            </div>
-            {open && (
-                <div className="kasa__collapse__description">{description}</div>
-            )}
-        </div>
-    );
+    return { open, setOpen };
 }
-
-Collapse.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.oneOfType([
-        PropTypes.string.isRequired,
-        PropTypes.array.isRequired,
-    ]),
-};
-Collapse.defaultProps = {
-    title: "",
-    description: "",
-};
-export default Collapse;
